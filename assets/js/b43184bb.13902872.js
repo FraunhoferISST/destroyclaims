@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdiva_docs=self.webpackChunkdiva_docs||[]).push([[573],{7113:function(a){a.exports=JSON.parse('{"label":"hola","permalink":"/destroyclaims/blog/tags/hola","allTagsPath":"/destroyclaims/blog/tags","count":1}')}}]);
