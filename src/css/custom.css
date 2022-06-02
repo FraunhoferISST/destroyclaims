@@ -1,0 +1,323 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1c8897;
+  --ifm-color-primary-dark: #197a88;
+  --ifm-color-primary-darker: #187480;
+  --ifm-color-primary-darkest: #145f6a;
+  --ifm-color-primary-light: #1f96a6;
+  --ifm-color-primary-lighter: #209cae;
+  --ifm-color-primary-lightest: #24b1c4;
+  --ifm-code-font-size: 95%;
+  --ifm-font-weight-bold: 500;
+  --ifm-custom-navbar-background-color: rgba(255, 255, 255, 0.33);
+  --ifm-heading-font-family: 'Rubik', "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /*--ifm-font-family-base: 'IBM Plex Sans', 'Noto Sans', sans-serif,  Helvetica, Arial, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, system-ui, "Segoe UI",  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+
+  /*--ifm-font-family-base: 'Rubik', "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  /*--ifm-heading-font-family: 'IBM Plex Sans', 'Noto Sans', sans-serif,  Helvetica, Arial, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, system-ui, "Segoe UI",  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  /*--ifm-code-background: 95%;*/
+}
+
+[data-theme='dark']  {
+  --ifm-custom-navbar-background-color: rgba(38, 38, 38, 0.329);
+  --ifm-color-primary: #1c8897;
+}
+
+.hero.hero--primary {
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #1c8897, #24b1c4); 
+}
+
+.hero.hero--primary .hero__container {
+  height: 30vh;
+}
+
+.hero.hero--primary .hero__image {
+  width: 30vw;
+  float: right;
+  /*mask-image: linear-gradient(to top, transparent 40%, black),linear-gradient(to top left, transparent 40%, black);*/
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-500%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero.hero--primary .diva__logo {
+  -webkit-filter: drop-shadow(2px 2px 0 white)
+                drop-shadow(-2px 2px 0 white)
+                drop-shadow(2px -2px 0 white)
+                drop-shadow(-2px -2px 0 white);
+
+  filter: drop-shadow(2px 2px 0 white)
+          drop-shadow(-2px 2px 0 white)
+          drop-shadow(2px -2px 0 white)
+          drop-shadow(-2px -2px 0 white);
+  
+  margin-right: 1em;
+  float: left; 
+  width: 5vw;
+}
+
+.hero.hero--primary .button {
+  margin: 5px;
+}
+
+.hero.hero--primary .button.button--secondary.button--outline {
+  color: #f5f6f7;
+}
+
+.hero.hero--primary .hero__title {
+  color: #f5f6f7;
+}
+
+.hero.hero--primary .hero__subtitle {
+  color: #f5f6f7;
+  font-size: 2.4rem;
+  text-align: left;
+  max-width: 40vw;
+  margin: 30px 0;
+  display:flex;
+  align-items:center;
+}
+
+.hero.hero--primary .button.button--outline:hover,
+.hero.hero--primary .button.button--outline:active,
+.hero.hero--primary .button.button--outline.button--active {
+  background-color: rgba(70, 203, 174, 0.5);
+}
+
+.github-button {
+  margin: 4px 0 0 20px;
+  position: relative;
+  top: 5px;
+}
+
+.navbar .navbar__logo {
+  max-height: 100%;
+}
+
+.navbar .icon[href*=github],
+.navbar .icon[href*=twitter],
+.navbar .icon[href*=slack] {
+  font-size: 0;
+  padding: 4px;
+  margin: 0 4px;
+}
+
+.navbar .icon[href*=github]::before,
+.navbar .icon[href*=twitter]::before,
+.navbar .icon[href*=slack]::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+}
+
+.navbar .icon[href*=github]::before {
+  background-image: url('/static/img/logos/github-brand.svg');
+}
+
+.navbar a[data-type="versions"] {
+  white-space: nowrap;
+  text-decoration: underline;
+  position: relative;
+  font-size: 0.8em;
+}
+
+.navbar .react-toggle {
+  margin: 0 0 0 8px;
+}
+
+.button {
+  border-radius: 100px;
+  margin: 0 10px;
+}
+
+.github-button {
+  margin: 4px 0 0 20px;
+  position: relative;
+  top: 5px;
+}
+
+a[href*=edit] {
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 8px 16px;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+.margin-vert--xl {
+  margin-bottom: 3rem !important;
+  margin-top: 3rem !important;
+}
+
+.pagination-nav .pagination-nav__item a {
+  border-radius: 100px 20px 20px 100px;
+  padding-left: 40px;
+}
+
+.pagination-nav .pagination-nav__item--next a {
+  border-radius: 20px 100px 100px 20px;
+  padding-right: 40px;
+}
+
+html[data-theme="dark"] .navbar .navbar__brand,
+html[data-theme="dark"] .main-wrapper a[class*='sidebarLogo'] {
+  background-image: url('/static/img/logos/diva_logo_1000_1000.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+html[data-theme="dark"] .navbar .navbar__brand img,
+html[data-theme="dark"] .main-wrapper a[class*='sidebarLogo'] img {
+  visibility: hidden;
+}
+
+html[data-theme="dark"] .main-wrapper a[class*='sidebarLogo'] {
+  margin-right: 70px;
+}
+
+html[data-theme="dark"] .hero.hero--primary {
+  background-color: #0d572f;
+  background-image: linear-gradient(120deg, #24b1c4, #145f6a);
+}
+
+html[data-theme="dark"] .navbar .navbar__link[href*=github]:before {
+  background-image: url('/static/img/logos/github-brand-dark.svg');
+}
+
+@media screen and (max-width: 1600px) {
+  .hero.hero--primary .hero__image {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .hero.hero--primary .hero__subtitle {
+    font-size: 2rem;
+    text-align: left;
+    max-width: inherit;
+  }
+
+  .hero.hero--primary .hero__image {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero.hero--primary .hero__subtitle {
+    font-size: 2rem;
+  }
+
+  .hero.hero--primary .hero__container {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero.hero--primary .hero__subtitle {
+    font-size: 2rem;
+    text-align: center;
+    max-width: inherit;
+  }
+
+  .buttons_src-pages- {
+    max-width: inherit !important;
+  }
+
+  .buttons_src-pages-index-module {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .hero.hero--primary .container img {
+    display: none;
+  }
+
+  .hero.hero--primary .hero__container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero.hero--primary .hero__subtitle {
+    font-size: 1.4rem;
+  }
+
+  .buttons_src-pages- {
+    margin: 0 -30px;
+  }
+
+  .hero.hero--primary .hero__container {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 995px) and (max-width: 1130px) {
+  .navbar .icon[href*=twitter],
+  .navbar .icon[href*=slack] {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 995px) and (max-width: 1030px) {
+  .navbar a[data-type="versions"] {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero.hero--primary .button.button--outline {
+    font-size: 0.8rem;
+  }
+}
+
+html code {
+  color: #1c1e21;
+  background-color: #ebedf0;
+}
+
+html[data-theme="dark"] code {
+  color: #f5f6f7;
+  background-color: #444950;
+}
+
+html a code {
+  color: inherit
+}
+
+.navbar svg[class*=iconExternalLink],
+aside svg[class*=iconExternalLink] {
+  display: none;
+}
