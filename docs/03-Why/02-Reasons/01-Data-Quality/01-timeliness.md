@@ -1,5 +1,5 @@
 ---
-id: why-data-quality-timeliness
+id: timeliness
 title: Timeliness
 ---
 
