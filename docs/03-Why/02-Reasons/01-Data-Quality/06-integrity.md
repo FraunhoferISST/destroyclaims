@@ -1,5 +1,5 @@
 ---
-id: why-data-quality-integrity
+id: integrity
 title: Integrity
 ---
 

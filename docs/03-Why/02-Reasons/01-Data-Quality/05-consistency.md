@@ -1,5 +1,5 @@
 ---
-id: why-data-quality-consistency
+id: consistency
 title: Consistency
 ---
 

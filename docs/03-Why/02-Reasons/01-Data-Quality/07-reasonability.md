@@ -1,5 +1,5 @@
 ---
-id: why-data-quality-reasonability
+id: reasonability
 title: Reasonability
 ---
 

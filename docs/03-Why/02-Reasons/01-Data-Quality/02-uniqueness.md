@@ -1,5 +1,5 @@
 ---
-id: why-data-quality-uniqueness
+id: uniqueness
 title: Uniqueness
 ---
 

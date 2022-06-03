@@ -1,5 +1,5 @@
 ---
-id: why-data-quality-validity
+id: validity
 title: Validity
 ---
 

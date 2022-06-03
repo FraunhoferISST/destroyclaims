@@ -1,5 +1,5 @@
 ---
-id: why-data-quality-completeness
+id: completeness
 title: Completeness
 ---
 

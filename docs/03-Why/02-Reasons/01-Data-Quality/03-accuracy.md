@@ -1,5 +1,5 @@
 ---
-id: why-data-quality-accuracy
+id: accuracy
 title: Accuracy
 ---
 

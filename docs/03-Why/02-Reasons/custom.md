@@ -1,5 +1,5 @@
 ---
-id: why-custom
+id: custom
 title: Custom
 ---
 
